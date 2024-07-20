@@ -2,11 +2,14 @@ import React from "react";
 import ImageCard from "../ImageCard/ImageCard";
 import s from "./ImageGallery.module.css";
 
-const ImageGallery = () => {
+const ImageGallery = ({ images, onImageClick }) => {
   return (
-    <div>
-      ImageGallery
-      <ImageCard />
+    <div className={s.wraper}>
+      <ul className={s.ImageGallery}>
+        {images.map((image) => (
+          <ImageCard key={image.id} image={image} onImageClick={onImageClick} />
+        ))}
+      </ul>
     </div>
   );
 };

@@ -1,8 +1,10 @@
 import React from "react";
 import s from "./LoadMoreBtn.module.css";
 
-const LoadMoreBtn = () => {
-  return <div>LoadMoreBtn</div>;
-};
+const LoadMoreBtn = ({ onClick }) => (
+  <button className={s.LoadMoreBtn} onClick={onClick}>
+    Load more
+  </button>
+);
 
 export default LoadMoreBtn;

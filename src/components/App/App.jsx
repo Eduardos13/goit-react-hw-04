@@ -7,6 +7,7 @@ import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
 import ImageModal from "../ImageModal/ImageModal";
 import toast, { Toaster } from "react-hot-toast";
+import { fetchImages } from "../../servises/api";
 
 const App = () => {
   const [images, setImages] = useState([]);

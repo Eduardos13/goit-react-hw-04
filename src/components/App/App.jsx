@@ -31,7 +31,7 @@ const App = () => {
           },
         }
       );
-      setImages((prevImages) => [...prevImages, ...response.data.results]);
+      setImages((prev) => [...prev, ...response.data.results]);
     } catch (error) {
       setError("Error fetching images");
     } finally {
@@ -52,7 +52,7 @@ const App = () => {
   };
 
   const handleLoadMore = () => {
-    setPage((prevPage) => prevPage + 1);
+    setPage((prev) => prev + 1);
   };
 
   const handleImageClick = (image) => {

@@ -6,12 +6,12 @@ import { IoSearch } from "react-icons/io5";
 const SearchBar = ({ onSubmit }) => {
   const [input, setInput] = useState("");
 
-  const handleChange = (e) => {
-    setInput(e.target.value);
+  const handleChange = (event) => {
+    setInput(event.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     if (!input.trim()) {
       toast.error("Please enter a search term");
       return;

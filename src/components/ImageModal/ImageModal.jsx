@@ -15,6 +15,7 @@ const ImageModal = ({ image, onClose }) => {
         <RxCross2 />
       </button>
       <img src={image.urls.regular} alt={image.alt_description} />
+      <p>Likes: {image.likes}</p>
     </Modal>
   );
 };

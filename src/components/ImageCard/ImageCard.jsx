@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./ImageCard.module.css";
-import { FcLike } from "react-icons/fc";
 
 const ImageCard = ({ image, onImageClick }) => {
   return (
